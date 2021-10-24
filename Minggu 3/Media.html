@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+	h1 {
+		text-align: center;
+	}
+	td {
+		text-align: center;
+	}
+	th {
+		border-bottom: 2px solid skyblue;
+		text-align: center;
+	}
+	.grid-container {
+ 		 display: grid;
+ 		 grid-template-columns: auto auto auto;
+ 		 background-color: #fffff;
+ 		 padding: 10px;
+	}
+	.grid-item {
+  		background-color: rgba(0, 0, 0, 0);
+  		border: 1px solid rgba(0, 0, 0, 0);
+  		padding: 20px;
+ 		font-size: 30px;
+  		text-align: left;
+  	}
+  	  	ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: royalblue;
+		}
+		li a{
+			float: left;
+		}
+		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 20px;
+			text-decoration: none;
+			font-size: 20px;
+		}
+		li a:hover {
+			background-color: grey;
+		}
+</style>
+</head>
+<body>
+	<h1 style="background-color: skyblue;"> Media Mahasiswa</h1>
+	<ul>
+		<li><a href="Biodata Baru.html">Biodata Mahasiswa</a></li>
+		<li><a href="Media.html">Media</a></li>
+ 		<li><a href="#contact">Contact</a></li>
+  		<li><a href="#about">About</a></li>
+	</ul>
+	<div class="grid-container">
+	<div class="grid-item" style="margin-top: px; margin-left: px;"><table>
+		<tr>
+			<td>Media Video</td>
+			<td><video width="600" height="400" controls="1" autoplay="1" muted="1" style="margin-left: 40px;">
+	 				<source src="Race Crew Pit Crew {Rev}.mp4" type="video/mp4">
+	 			</video></td>
+		</tr>
+		<tr>
+			<td>Media Audio</td>
+			<td><audio controls autoplay style="margin-left: -270px;">
+  					<source src="Ashley Johnson (Ellie) - Take on Me.mp3" type="audio/ogg">
+				</audio></td>
+		</tr>
+		<tr>
+			<td>Media Plug-Ins</td>
+			<td><object width="100%" height="600px" data="Minggu 3-Praktikum.pdf" style="margin-left: 50px;"></object></td>
+		</tr>
+		<tr>
+			<td>Media Youtube</td>
+			<td><iframe width="560" height="315" src="https://www.youtube.com/embed/3eCpjpRpMEc?autoplay=1" title="YouTube video player" frameborder="0" allowfullscreen></iframe></td>
+		</tr>
+	</table>
+	</div>
+	</div>
+
+
+</body>
+</html>
