@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<!--Style-->
+<style>
+	h1 {
+		font-size: 35px;
+		text-align: center;
+	}
+	table {
+		border: 2px solid black;
+		width: 50%;
+		border-collapse: collapse;
+	}
+	th {
+		font-size: 20px;
+		border: px solid black;
+	}
+	.number {
+		width: 1%;
+		text-align: center;
+	}
+	.FORMULIR {
+		width: 70%;
+	}
+	.tab {
+		text-align: center;
+	}
+	td {
+		font-weight: normal;
+		text-align: left;
+		border: 2px solid black;
+	}
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: royalblue;
+	}
+	li a{
+		float: left;
+	}
+	li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 20px;
+		text-decoration: none;
+		font-size: 20px;
+	}
+	li a:hover {
+		background-color: grey;
+	}
+	.garis{
+		width: 100%;
+	}
+	.grid-container {
+ 		display: grid;
+ 		grid-template-columns: auto auto auto;
+ 		background-color: #fffff;
+	}
+	.grid-item {
+  		background-color: rgba(0, 0, 0, 0);
+  		border: 1px solid rgba(0, 0, 0, 0);
+ 		width: 150%;
+  	}
+</style>
+<!--Akhir Style-->
+
+<!--Pilihan Tugas Mingguan-->
+	<ul>
+		<li><a href="Biodata Baru.html">Biodata Mahasiswa</a></li>
+		<li><a href="Media.html">Media</a></li>
+ 		<li><a href="Hrml Form.html">Form</a></li>
+  		<li><a href="#about">About</a></li>
+	</ul>
+<!--Judul Form-->
+<head>
+	<hr>
+	<h1>FORMULIR PPDB JALUR ZONASI TAHUN 2022</h1>
+	<hr>
+</head>
+<!--Akhir Judul-->
+
+<!--Body Form-->
+<body>
+<div class="grid-container">
+	<div class="grid-item">
+	<form action="Proses.php" method="post" name="FormContoh">
+		<table>
+			<tr>
+				<th class="number">Nomor</th>
+				<th class="FORMULIR">INFO PENDAFTARAN</th>
+				<th class="FORMULIR"></th>
+			</tr>
+			<tr>
+				<td class="number">1</td>
+				<td><label for="fnisn">NISN:</label></td>
+				<td><input type="text" id="fnisn" name="fnisn" required placeholder="ex : 1234567890" pattern="{10}"></td>
+			</tr>
+			<tr>
+				<td class="number">2</td>
+				<td><label for="fasalsekolah">Asal Sekolah :</label></td>
+				<td><input type="text" id="fasalsekolah" name="fasalsekolah" required placeholder="ex : SMP N 1"></td>
+			</tr>
+			<tr>
+				<td class="number">3</td>
+				<td><label for="ftahunlulus">Tahun Lulus :</label></td>
+				<td><input type="text" id="ftahunlulus" name="ftahunlulus" required placeholder="ex : 2021" pattern="{4}"><i>(lampirkan fotocopy ijazah)</i></td>
+			</tr>
+			<tr>
+				<th class="number">
+				<th class="FORMULIR">DATA CALON PESERTA</th>
+				<th class="FORMULIR"></th>
+			</tr>
+			<tr>
+				<td class="number">4</td>
+				<td><label for="fnama_lengkap">Nama Lengkap :</label></td>
+				<td><input type="text" id="fnama_lengkap" name="fnama_lengkap" required placeholder="ex : Allegra Azhari Zain"></td>
+			</tr>
+			<tr>
+				<td class="number">5</td>
+				<td><label for="fnik">NIK :</label></td>
+				<td><input type="text" id="fnik" name="fnik" required placeholder="ex : 3372010203040006" pattern="{16}"></td>
+			</tr>
+			<tr>
+				<td class="number">6</td>
+				<td><label for="ftempat_tanggal_lahir">Tempat, Tanggal Lahir :</label></td>
+				<td><input type="text" id="ftempat_tanggal_lahir" name="ftempat_tanggal_lahir" required placeholder="ex : Surakarta"><input type="date" id="ftempat_tanggal_lahir" name="ftempat_tanggal_lahir" required></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>Fotocopy Akte Kelahiran yang telah dilegalisir <i>Di Lampirkan</i></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="number">7</td>
+				<td><label for="fjenis_kelamin">Jenis Kelamin :</label></td>
+				<td><input type="radio" id="fjenis_kelamin" name="fjenis_kelamin" value="Laki Laki" required>
+  					<label for="fjenis_kelamin">Laki Laki</label><br>
+  					<input type="radio" id="fjenis_kelamin" name="fjenis_kelamin" value="Perempuan">
+  					<label for="fjenis_kelamin">Perempuan</label></td>
+			</tr>
+			<tr>
+				<td class="number">8</td>
+				<td><label for="falamat_tinggal">Alamat tempat tinggal :</label></td>
+				<td><textarea id="falamat_tinggal" name="falamat_tinggal" required></textarea></td>
+			</tr> 
+			<tr>
+				<td class="number">9</td>
+				<td class="tab"><label for="fdesa_kel">Desa/Kel. :</label></td>
+				<td><input type="text" id="fdesa_kel" name="fdesa_kel" required placeholder="ex : Mojosongo"></td>
+			</tr>
+			<tr>
+				<td class="number">10</td>
+				<td class="tab"><label for="fkecamatan">Kecamatan :</label></td>
+				<td><input type="text" id="fkecamatan" name="fkecamatan" required placeholder="ex : Jebres"></td>
+			</tr>
+			<tr>
+				<td class="number">11</td>
+				<td class="tab"><label for="fkabupaten">Kabupaten :</label></td>
+				<td><input type="text" id="fkabupaten" name="fkabupaten" required placeholder="ex : Karanganyar"></td>
+			</tr>
+			<tr>
+				<td class="number">12</td>
+				<td class="tab"><label for="fkota">Kota :</label></td>
+				<td><input type="text" id="fkota" name="fkota" required placeholder="ex : Surakarta"></td>
+			</tr>
+			<tr>
+				<td class="number">13</td>
+				<td class="tab"><label for="fprovinsi">Provinsi :</label></td>
+				<td><input type="text" id="fprovinsi" name="fprovinsi" required placeholder="ex : Jawa Tengah"></td>
+			</tr>
+			<tr>
+				<td class="number">14</td>
+				<td><label for="femail">Email Aktif :</label></td>
+				<td><input type="email" name="femail" required placeholder="ex : .....@gmail.com"></td>
+			</tr>
+			<tr>
+				<th class="number"></th>
+				<th class="FORMULIR">DATA ORANG TUA <i>(lampirkan KK)</i></th>
+				<th class="FORMULIR"></th>
+			</tr>
+			<tr>
+				<td class="number">15</td>
+				<td><label for="fnomorkk">Nomor Kartu Keluarga :</label></td>
+				<td><input type="text" id="fnomorkk" name="fnomorkk" required placeholder="ex : 3372123456789012" pattern="{16}"></td>
+			</tr>
+			<tr>
+				<td class="number">16</td>
+				<td><label for="fnamaayah">Nama Ayah Kandung :</label></td>
+				<td><input type="text" id="fnamaayah" name="fnamaayah" required></td>
+			</tr>
+			<tr>
+				<td class="number">17</td>
+				<td><label for="fagamaayah">Agama :</label></td>
+				<td><select id="fagamaayah" name="fagamaayah" required>
+					<option value="">::Pilih salah satu::</option>
+    				<option value="Islam">Islam</option>
+    				<option value="Kristen">Kristen</option>
+    				<option value="Katolik">Katolik</option>
+    				<option value="Hindhu">Hindhu</option>
+    				<option value="Budha">Budha</option></select></td>
+			</tr>
+			<tr>
+				<td class="number">18</td>
+				<td><label for="fpekerjaanayah">Pekerjaan :</label></td>
+				<td><input type="fpekerjaanayah" name="fpekerjaanayah" required placeholder="ex : Pegawai BUMN"></td>
+			</tr>
+			<tr>
+				<td class="number">19</td>
+				<td><label for="fnamaibu">Nama Ibu Kandung :</label></td>
+				<td><input type="text" id="fnamaibu" name="fnamaibu" required></td>
+			</tr>
+			<tr>
+				<td class="number">20</td>
+				<td><label for="fagamaibu">Agama :</label></td>
+				<td><select id="fagamaibu" name="fagamaibu" required>
+					<option value="">::Pilih salah satu::</option>
+    				<option value="Islam">Islam</option>
+    				<option value="Kristen">Kristen</option>
+    				<option value="Katolik">Katolik</option>
+    				<option value="Hindhu">Hindhu</option>
+    				<option value="Budha">Budha</option></select></td>
+			</tr>
+			<tr>
+				<td class="number">21</td>
+				<td><label for="fpekerjaanibu">Pekerjaan :</label></td>
+				<td><input type="fpekerjaanibu" name="fpekerjaanibu" required placeholder="ex : Pegawai Negeri Sipil"></td>
+			</tr>
+		</table>
+	</div>
+<!--Akhir Form 1-->
+<!--Awal Form 2-->
+	<div class="grid-item">
+		<table style="margin-left: -150px;">
+			<tr>
+				<th class="number">Nomor</th>
+				<th class="FORMULIR" width="100">KELENGKAPAN FILE</th>
+				<th class="FORMULIR"></th>
+			</tr>
+			<tr>
+				<td class="number">1</td>
+				<td><label for="file_ijazah">File Ijazah:</label></td>
+  				<td><input type="file" id="file_ijazah" name="file_ijazah" pattern="[.pdf]"></td>
+			</tr>
+			<tr>
+				<td class="number">2</td>
+				<td><label for="file_kk">File KK:</label></td>
+  				<td><input type="file" id="file_kk" name="file_kk" pattern="[.pdf]"></td>
+			</tr>
+			<tr>
+				<td class="number">3</td>
+				<td><label for="file_akte">File Akte Kelahiran:</label></td>
+  				<td><input type="file" id="file_akte" name="file_akte" pattern="[.pdf]"></td>
+			</tr>
+			<tr>
+				<td class="number">4</td>
+				<td><label for="file_foto">File foto terakhir:</label></td>
+  				<td><input type="file" id="file_foto" name="file_foto" pattern="[.jpg]"></td>
+			</tr>
+		</table><br>			
+		<input type="submit" value="Submit">
+		<input type="reset">
+	</form>
+	</div>
+</div>
+<!--Akhir Form 2-->
+</body>
+
+
+</html>
